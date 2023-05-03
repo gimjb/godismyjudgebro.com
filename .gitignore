@@ -9,3 +9,13 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# TypeScript
+.cache/*
+src/**/*.d.ts
+src/**/*.js
+src/**/*.js.map
+
+# Re-include test files
+!src/**/*.test.js
+!src/**/test.js
