@@ -1,0 +1,40 @@
+// TypeScript Configuration
+// Documentation of the options: https://www.typescriptlang.org/tsconfig
+{
+  // Top Level
+  "include": ["src/**/*.ts"],
+  "exclude": [],
+  "compilerOptions": {
+    // Type checking
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
+
+    // Modules
+    // "baseUrl": ".",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+
+    // Emit
+    "newLine": "lf",
+    "sourceMap": true,
+
+    // Interop Constraints
+    "forceConsistentCasingInFileNames": true,
+
+    // Language and Environment
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+
+    // Projects
+    "composite": true,
+    "tsBuildInfoFile": ".cache/server.tsbuildinfo",
+
+    // Output Formatting
+    "noErrorTruncation": true
+  }
+}
