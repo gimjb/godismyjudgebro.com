@@ -1,0 +1,21 @@
+name: Merge master into develop
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: develop
+      - name: Merge master
+        run: |
+          git config --global user.email "090302@5409.dk"
+          git config --global user.name "Daniel Beckv"
+          git merge master --no-edit
+          git push
